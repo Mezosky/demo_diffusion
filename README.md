@@ -1,4 +1,4 @@
-# ✨ SketchMagic Studio
+# ✨ Demo Diffusion
 
 <p align="center">
   <img src="./resources/how-to-use-record.gif" alt="SketchMagic Studio Demo" width="500"/>
@@ -17,7 +17,7 @@ A modular, production-ready **Gradio application** for AI-powered **sketch-to-im
 ## 📁 Project Structure
 
 ```
-sketch_magic_studio/
+demo-diffusion/
 ├── app.py                    # Main application entry point
 ├── config/
 │   ├── __init__.py
