@@ -1,7 +1,7 @@
 # ✨ SketchMagic Studio
 
 <p align="center">
-  <img src="/mnt/bkp2/Ignacio_projects/demo-ehsan-diff-sketch/resources/how-to-use-record.gif" alt="SketchMagic Studio Demo" width="500"/>
+  <img src="./resources/how-to-use-record.gif" alt="SketchMagic Studio Demo" width="500"/>
 </p>
 
 A modular, production-ready **Gradio application** for AI-powered **sketch-to-image generation** and **artistic image transformation**, built on **Stable Diffusion** and **ControlNet**.
