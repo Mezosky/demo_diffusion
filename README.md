@@ -58,21 +58,15 @@ cd sketch_magic_studio
 
 2. **Install dependencies:**
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
 ```
 
-3. **Install XFormers (Optional, for better performance):**
+3. **Run the app!!**
 ```bash
-pip install xformers
-```
-
-## 🏃‍♂️ Running the Application
-
-### Basic Usage
-
-```bash
+conda activate aiartistic
 python app.py
 ```
+
 
 ### Environment Variables
 

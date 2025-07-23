@@ -1,8 +1,0 @@
-gradio
-Pillow
-torch
-diffusers
-transformers
-accelerate
-numpy
-xformers # For CUDA users, install with pip install xformers

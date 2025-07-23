@@ -7,7 +7,7 @@ from .components import (
     create_main_container, create_sidebar_layout, create_content_area,
     create_section_header, create_param_group, create_prompt_section,
     create_slider_with_info, create_primary_button, create_secondary_button,
-    create_image_container, create_status_display, create_quick_prompts_section,
+    create_status_display, create_quick_prompts_section,
     create_tips_section
 )
 
@@ -73,11 +73,21 @@ def create_manipulation_tab(model_manager_instance):
             with gr.Row():
                 with gr.Column():
                     create_section_header("Original Image", "🖼️")
-                    input_image_display = create_image_container("", height=400)
+                    input_image_upload = gr.Image(
+                        label="Upload an image",
+                        type="pil",
+                        image_mode="RGB",
+                        height=400
+                    )
                 
                 with gr.Column():
                     create_section_header("Transformed Result", "✨")
-                    modified_image = create_image_container("", height=400)
+                    modified_image = gr.Image(
+                        label="Transformed Image",
+                        type="pil",
+                        height=400,
+                        interactive=False
+                    )
             
             status_modify = create_status_display("Generate an image first, then transform it!")
             
@@ -96,7 +106,7 @@ def create_manipulation_tab(model_manager_instance):
             create_tips_section(TRANSFORM_TIPS)
 
     return (
-        input_image_display, modification_input, guidance_scale_modify,
+        input_image_upload, modification_input, guidance_scale_modify,
         image_guidance_scale, num_steps_modify, seed_modify, modified_image,
         status_modify, clear_modify_prompt_btn, modify_btn
     )

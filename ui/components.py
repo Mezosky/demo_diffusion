@@ -8,7 +8,7 @@ def create_hero_section():
     """Create the hero header section."""
     return gr.HTML("""
     <div class="hero-section">
-        <h1 class="hero-title">🎨 SketchMagic Studio ✨</h1>
+        <h1 class="hero-title">🎨 AIArtist ✨</h1>
         <p class="hero-subtitle">Transform your sketches into stunning AI-generated artwork</p>
     </div>
     """)

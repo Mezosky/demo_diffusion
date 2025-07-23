@@ -1,0 +1,20 @@
+name: aiartistic
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy<=2.0
+  - pillow
+  - pytorch
+  - torchvision
+  - pytorch-cuda=11.8
+  - pip:
+      - gradio
+      - diffusers
+      - transformers
+      - huggingface_hub
+      - accelerate

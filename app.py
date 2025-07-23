@@ -98,10 +98,17 @@ class SketchMagicApp:
         )
 
         # Transform image
+        def get_valid_image(uploaded_img, generated_img):
+            return uploaded_img if uploaded_img is not None else generated_img
+
         modify_btn.click(
+            fn=get_valid_image,
+            inputs=[input_image_display_manipulation, generated_image_placeholder],
+            outputs=input_image_display_manipulation
+        ).then(
             fn=self.image_generator.transform_image,
             inputs=[
-                generated_image_placeholder, modification_input,
+                input_image_display_manipulation, modification_input,
                 guidance_scale_modify, image_guidance_scale, num_steps_modify, seed_modify
             ],
             outputs=[modified_image_output_manipulation, status_modify],
