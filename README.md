@@ -53,7 +53,7 @@ demo-diffusion/
 1. **Clone the repository:**
 ```bash
 git clone https://github.com/Mezosky/demo_diffusion.git
-cd sketch_magic_studio
+cd demo_diffusion
 ```
 
 2. **Install dependencies:**
